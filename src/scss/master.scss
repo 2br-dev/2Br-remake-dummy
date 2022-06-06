@@ -1,0 +1,15 @@
+// Include frameworks
+@import "./framework/materialize";
+@import "./framework/materialdesignicons";
+
+// Include parts
+@import "./parts/media";
+@import "./parts/header";
+@import "./parts/footer";
+@import "./parts/helpers";
+@import "./parts/fonts";
+@import "./parts/glitch";
+@import "./parts/custom_grid";
+
+// Include entire pages
+@import "./pages/main";

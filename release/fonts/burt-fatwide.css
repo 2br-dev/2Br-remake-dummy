@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Burt';
+    src: local('Burt Fat Wide'), local('Burt-Fat-Wide'),
+        url('Burt-FatWide.woff2') format('woff2'),
+        url('Burt-FatWide.woff') format('woff'),
+        url('Burt-FatWide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

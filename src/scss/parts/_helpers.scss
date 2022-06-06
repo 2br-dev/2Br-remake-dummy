@@ -1,0 +1,17 @@
+body{
+	
+	font-family: 'Garet';
+	background: black;
+	color: #fff;
+	line-height: 1.5em;
+	padding-top: 2vmax;
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
+	& main{
+		flex-grow: 1;
+	}
+
+}
