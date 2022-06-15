@@ -20,15 +20,8 @@ const sync = require('browser-sync').init({
 
 gulp.task('include', () => {
 	return gulp.src("./src/html/*.html")
-		.pipe(include({
-			prefix: '@@',
-			basepath: '@file'
-		}))
+		.pipe(include())
 		.pipe(gulp.dest("./release/"))
-});
-
-gulp.task('update', () => {
-	return gulp.src("./release/*.html")
 		.pipe(sync.stream())
 });
 
@@ -49,7 +42,7 @@ gulp.task("js", () => {
 	.bundle()
 	.pipe(source("master.js"))
 	.pipe(buffer())
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(sourcemaps.init({loadMaps: true}))
 	.pipe(gulp.dest("./release/js"))
 	.pipe(sync.stream())
@@ -58,7 +51,6 @@ gulp.task("js", () => {
 
 gulp.task("watch", () => {
 	gulp.watch("./src/html/**/*.html", gulp.series("include"));
-	gulp.watch("./release/*.html", gulp.series("update"));
 	gulp.watch("./src/scss/**/*.scss", gulp.series("sass"));
 	gulp.watch("./src/js/**/*.js", gulp.series("js"));
 })

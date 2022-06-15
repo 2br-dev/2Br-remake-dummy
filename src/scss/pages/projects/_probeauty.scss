@@ -1,0 +1,98 @@
+.project#probeauty{
+
+	$accent: #EA1C80;
+	$yellow: #FFC900;
+
+
+	& main{
+
+		& .accent-text, & a{
+			color: $accent;
+		}
+
+		& .yp{
+
+			padding: 4vmax 0;
+			background: $accent;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 50%;
+				height: 100%;
+				background: $yellow;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+
+			& .col{
+				position: relative;
+				z-index: 2;
+			}
+		}
+
+		& .py{
+
+			@extend .yp;
+
+			&:before{
+				left: 50%;
+			}
+		}
+
+		& .stand{
+			padding-bottom: 85%;
+		}
+
+		& .glass{
+			height: 100%;
+
+			@media(max-width: $large){
+				padding-bottom: 85%;
+			}
+
+			@media(max-width: $medium){
+				padding-bottom: 145%;
+			}
+		}
+
+		& .lightbox{
+			height: 100%;
+
+			@media(max-width: $medium){
+				padding-bottom: 145%;
+			}
+		}
+
+		& .scrolling-bg-wrapper{
+
+			margin-bottom: $gutter-width;
+
+			& .stickers{
+				padding-bottom: 15%;
+				background-size: auto 95%;
+				background-repeat: repeat-x;
+
+				@media(max-width: $large){
+					padding-bottom: 25%;
+				}
+
+				@media(max-width: $medium){
+					padding-bottom: 35%;
+				}
+
+				@media(max-width: $small){
+					padding-bottom: 55%;
+				}
+			}
+		}
+
+		& .bottom-ribbon{
+			padding-bottom: 5.72%;
+			background-size: contain;
+		}
+	}
+}

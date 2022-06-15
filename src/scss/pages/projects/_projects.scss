@@ -1,0 +1,71 @@
+@import "zatochi";
+@import "u";
+@import "uforum";
+@import "tabris";
+@import "probeauty";
+
+.project{
+
+	&.light{
+
+		background: #fff;
+		color: $text;
+	
+		& header{
+
+			background: rgba(#fff, .7);
+	
+			& .container{
+	
+				& a, & span{
+					color: #000;
+				}
+	
+				&:after{
+					background: linear-gradient(to left, transparent, black, transparent);
+				}
+			}
+		}
+
+		& footer{
+
+			& .container{
+
+				&:before{
+					background: linear-gradient(to right, transparent, black, transparent);
+				}
+			}
+
+	
+			& a{
+				color: rgba($text, .5);
+	
+				&:hover{
+					color: $text;
+				}
+			}
+		}
+	}
+
+	.title-video{
+		margin-bottom: 4vmax;
+	
+		& video{
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+
+	& h1{
+		font-size: 5vmax;
+		text-transform: uppercase;
+		line-height: 1em;
+	}
+
+	& h2{
+		font-size: 3.5vmax;
+		font-family: 'Gogh';
+		line-height: 1em;
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="135.45312px" height="135.4862px" viewBox="0 0 135.45312 135.4862" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L130.633 0L130.633 130.666L0 130.666L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="wok_icon" transform="translate(2.4101562 2.4100342)">
+    <path d="M0 0L130.633 0L130.633 130.666L0 130.666L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <g id="a" transform="translate(-3.1757812 28.996582)">
+        <g id="Group" transform="translate(28.93164 0)">
+          <path d="M79.1205 32.5012L76.5746 21.425L60.7042 0.0991891L60.3405 0.198378L59.7785 0L4.09985 5.78608L0 19.9372L1.12415 20.3339L5.02563 20.0364L7.90213 63.4816L33.4931 72.4087L66.3581 72.6732L74.7892 29.7239L78.0294 32.9641L79.1205 32.5012L79.1205 32.5012Z" id="Polygon" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="4.82" />
+          <g id="Group">
+            <g id="Group" transform="translate(4.1015625 0.3305664)">
+              <path d="M56.5375 0L72.3088 21.1605L62.2575 72.3425L43.2461 62.9195L56.5375 0L56.5375 0Z" id="Polygon" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+              <path d="M43.2473 62.9197L62.2587 72.3427L29.3937 72.0782L3.80273 63.1511L43.2473 62.9197L43.2473 62.9197Z" id="Polygon" fill="#FFB000" fill-rule="evenodd" stroke="none" />
+              <path d="M56.5383 0L43.2468 62.9195L3.80228 63.1509L0 5.45545L56.5383 0L56.5383 0Z" id="Polygon" fill="#B324AA" fill-rule="evenodd" stroke="none" />
+            </g>
+            <g id="Group">
+              <path d="M50.7522 16.1681L51.8763 16.5648L1.12415 20.3341L0 19.9373L50.7522 16.1681L50.7522 16.1681Z" id="Polygon" fill="#050505" fill-rule="evenodd" stroke="none" />
+              <path d="M59.7763 0L60.9004 0.396759L51.8742 16.5647L50.75 16.168L59.7763 0L59.7763 0Z" id="Polygon" fill="#050505" fill-rule="evenodd" stroke="none" />
+              <path d="M4.09985 5.78608L59.7785 0L50.7522 16.168L0 19.9372L4.09985 5.78608L4.09985 5.78608Z" id="Polygon" fill="#050505" fill-rule="evenodd" stroke="none" />
+            </g>
+            <g id="Group" transform="translate(59.714844 0.099243164)">
+              <path d="M0.994141 0L16.8645 21.3258L19.4104 32.4021L4.13516 16.73L0.994141 0L0.994141 0Z" id="Polygon" fill="#B324AA" fill-rule="evenodd" stroke="none" />
+              <path d="M4.13099 16.7302L19.4062 32.4022L18.3151 32.8651L2.77539 17.3254L4.13099 16.7302L4.13099 16.7302Z" id="Polygon" fill="#050505" fill-rule="evenodd" stroke="none" />
+              <path d="M0.991897 0L4.13291 16.73L2.77732 17.3252L0 0.29757L0.991897 0L0.991897 0Z" id="Polygon" fill="#050505" fill-rule="evenodd" stroke="none" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,143 @@
+.project#zatochi{
+
+	$accent: #FF3600;
+
+	& .wok-icon{
+		background-color: #B224AA;
+	}
+
+	& .pizza-icon{
+		background-color: #FF7F00;
+	}
+
+	& .rolls-icon{
+		background-color: $accent;
+	}
+	
+	& .ba-wrapper{
+
+		display: flex;
+		flex-wrap: wrap;
+		
+		& .before, & .after{
+			width: 30%;
+			flex-grow: 1;
+			box-sizing: border-box;
+			
+			@media(max-width: $medium){
+				width: 100%;
+			}
+		}
+
+		& .before{
+			background-color: #000;
+			position: relative;
+
+			&:before{
+				content:'';
+				display: block;
+				width: 0;
+				height: 0;
+				position: absolute;
+				right: 0;
+				transform: translate(100%, -50%);
+				top: 50%;
+				border-style: solid;
+				border-top-width: 16vw;
+				border-bottom-width: 16vw;
+				border-left-width: 4vmax;
+				border-right-width: 0;
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+				border-left-color: black;
+				border-right-color: transparent;
+
+				@media(max-width: $medium){
+					left:50%;
+					top: 100%;
+					transform: translate(-50%, 0%);
+					border-top-color: black;
+					border-left-color: transparent;
+					border-right-color: transparent;
+					border-bottom-color: transparent;
+					border-top-width: 6vw;
+					border-bottom-width: 0;
+					border-left-width: 47.5vw;
+					border-right-width: 47.5vw;
+				}
+			}
+
+		}
+	}
+
+	& .ib-wrapper{
+
+		padding-top: 4vmax;
+		padding-bottom: 4vmax;
+
+		& .icon-block{
+	
+			display: flex;
+			margin-bottom: 4vmax;
+			align-items: center;
+	
+			& .h-wrapper{
+	
+				flex-grow: 1;
+	
+				& h2{
+					margin: 0;
+				}
+			}
+	
+			& .icon-wrapper{
+				width: 6vmax;
+				flex-shrink: 0;
+			}
+		}
+	}
+
+	& .accent{
+		color: #fff !important;
+		background-color: $accent;
+	}
+
+	& .logo-vars{
+		background-size: 80% auto;
+		background-color: transparent;
+	}
+
+	& .logo-old, & .logo-new{
+		background-size: 50% auto;
+		background-color: transparent;
+	}
+
+	& .poster{
+		height: 100%;
+		width: 100%;
+		background-color: grey;
+		background-size: 70% auto;
+	}
+
+	& .pattern{
+		padding: 5vw 0;
+		background-size: 800px auto;
+		background-repeat: repeat;
+
+		& .pattern-block{
+			padding: 15px 30px;
+		}
+	}
+
+	& .mobile{
+		background-color: $accent;
+	}
+
+	& main{
+
+		& .accent-text, & a{
+			color: $accent;
+		}
+	}
+
+}

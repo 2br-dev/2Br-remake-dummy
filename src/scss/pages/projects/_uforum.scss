@@ -1,0 +1,11 @@
+.project#uforum{
+
+	$accent: #7A34DB;
+
+	& main{
+
+		& .accent-text, & a{
+			color: $accent;
+		}
+	}
+}
