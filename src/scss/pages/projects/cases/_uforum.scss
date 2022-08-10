@@ -1,0 +1,70 @@
+.project#uforum{
+
+	$accent: #7A34DB;
+
+	& main{
+
+		& .accent-text, & a{
+			color: $accent;
+		}
+
+		& #bag{
+			padding-bottom: 45%;
+		}
+
+		& .uforum-logo{
+			
+			font-family: 'Garet';
+			font-weight: 700;
+			color: #7A34DB;
+			font-size: 6vmax;
+			line-height: 2em;
+			
+			@media(max-width: $large){
+				text-align: center;
+			}
+			
+			@media(max-width: $small){
+				font-size: 48px;
+			}
+		}
+		
+		& .bottle{
+			margin-bottom: -15.68%;
+			position: relative;
+			z-index: 2;
+		}
+		
+		& .notebook{
+			background-position: bottom left;
+		}
+		
+		& .billboard{
+			padding-bottom: 40%;
+		}
+		
+		& .t-shirt{
+			padding-bottom: 20vmax;
+			background-repeat: repeat-x;
+			background-size: auto 100%;
+		}
+		
+		& .video-wrapper{
+			
+			display: flex;
+			
+			& video{
+				width: 100%;
+			}
+		}
+		
+		& .thanks{
+			background-color: #7A34DB;
+			color: #fff;
+			
+			& h2{
+				padding: .5em 0;
+			}
+		}
+	}
+}

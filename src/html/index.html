@@ -5,7 +5,7 @@
 </head>
 <body>
 	@@include('./parts/header.html')
-	<main id="index">
+	<main id="index" class="case-list">
 		<section id="hero">
 			<div class="container">
 				<div class="row">
@@ -17,8 +17,8 @@
 							</div>
 							<div class="separator"></div>
 							<div class="glitch-right">
-								<div class="glitch-right-top">Готовимся к выпуску</div>
-								<div class="glitch-right-bottom">coming soon</div>
+								<div class="glitch-right-top">bright brand</div>
+								<div class="glitch-right-bottom">agency</div>
 							</div>
 						</div>
 					</div>
@@ -27,20 +27,20 @@
 		</section>
 		<section id="services">
 			<div class="container">
-				<div class="row">
-					<div class="col xl2 l3 m6 s12 offset-xl2">
+				<div class="row flex">
+					<div class="col l3 m6 s12">
 						<h2>МАРКЕТИНГ</h2>
-						<ul>
+						<ul class="browser-default">
 							<li>аудит</li>
 							<li>стратегическое планирование</li>
 							<li>позиционирование</li>
 							<li>рекламные кампании</li>
-							<li>стратегические сессии и воркшопы</li>
+							<li>стратегические сессии и воркшопы</li>
 						</ul>
 					</div>
-					<div class="col xl2 l3 m6 s12">
+					<div class="col l3 m6 s12">
 						<h2>БРЕНДИНГ</h2>
-						<ul>
+						<ul class="browser-default">
 							<li>бренд-стратегия</li>
 							<li>платформа бренда</li>
 							<li>нейминг</li>
@@ -48,9 +48,9 @@
 							<li>ребрендинг</li>
 						</ul>
 					</div>
-					<div class="col xl2 l3 m6 s12">
+					<div class="col l3 m6 s12">
 						<h2>ДИЗАЙН</h2>
-						<ul>
+						<ul class="browser-default">
 							<li>дизайн система бренда</li>
 							<li>фирменный стиль</li>
 							<li>упаковка/этикетка</li>
@@ -58,16 +58,40 @@
 							<li>3D визуализация</li>
 						</ul>
 					</div>
-					<div class="col xl2 l3 m6 s12">
+					<div class="col l3 m6 s12">
 						<h2>DIGITAL</h2>
-						<ul>
+						<ul class="browser-default">
 							<li>создание ресурсов любой сложности</li>
 							<li>интеграция систем учёта</li>
-							<li>front и back-end разработка </li>
+							<li>front и back-end разработка </li>
 							<li>SMM стратегия</li>
-							<li>интернет реклама и креативы</li>
+							<li>интернет реклама и креативы</li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="cases">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h2>КЕЙСЫ</h2>
+						<ul class="browser-default hidden">
+							<li><a href="/loppi.html">Лоппи</a></li>
+							<li><a href="/probeauty.html">Про-бьюти</a></li>
+							<li><a href="/rost.html">Рост</a></li>
+							<li><a href="/tabris.html">Табрис</a></li>
+							<li><a href="/u.html">Ю</a></li>
+							<li><a href="/uforum.html">ЮФорум</a></li>
+							<li><a href="/zatochi.html">Заточи</a></li>
+							<li><a href="/edelveis.html">Эдельвейс-агро</a></li>
+							<li><a href="/victory.html">Портал Победы</a></li>
+							<li><a href="/mdenta.html">M-Denta</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row cases">
+					@@loop('./parts/case.html', './data/cases.json')
 				</div>
 			</div>
 		</section>

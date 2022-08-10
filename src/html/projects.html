@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="projects" class="case-list">
+		<section id="cases">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<ul class="breadcrumbs">
+							<li class="crumb"><a href="/">Главная</a></li>
+							<li class="crumb"><a href="/projects.html">Проекты</a></li>
+						</ul>
+						<h1>Наши проекты</h1>
+						<ul class="browser-default hidden">
+							<li><a href="/loppi.html">Лоппи</a></li>
+							<li><a href="/probeauty.html">Про-бьюти</a></li>
+							<li><a href="/rost.html">Рост</a></li>
+							<li><a href="/tabris.html">Табрис</a></li>
+							<li><a href="/u.html">Ю</a></li>
+							<li><a href="/uforum.html">ЮФорум</a></li>
+							<li><a href="/zatochi.html">Заточи</a></li>
+							<li><a href="/edelveis.html">Эдельвейс-агро</a></li>
+							<li><a href="/victory.html">Портал Победы</a></li>
+							<li><a href="/mdenta.html">M-Denta</a></li>
+						</ul>
+					</div>
+					<div class="col s12">
+
+						<div class="cases">
+							@@loop('./parts/case.html', './data/cases_inside.json')
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>

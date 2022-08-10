@@ -1,0 +1,111 @@
+#rost{
+    
+    & .pink{
+        
+        color: #fff;
+
+        & .logo-block{
+
+            display: flex;
+            align-items: center;
+            margin: 4vmax 0;
+
+            & .logo-wrapper{
+
+                padding-right: 40px;
+                width: 65%;
+
+                & .lazy{
+                    width: 100%;
+                }
+            }
+
+            & .font-names{
+
+                flex-grow: 1;
+
+                & .font-name{
+                    padding: 20px 0;
+                    text-align: right;
+                }
+            }
+
+        }
+
+        & .colors-wrapper{
+
+            display: flex;
+            flex-wrap: wrap;
+
+            & .color-entry{
+
+                width: 30%;
+                margin-right: 3%;
+                padding: 30px;
+                padding-left: 0;
+                text-align: left;
+
+
+                & .color-circle{
+                    width: 100%;
+                    padding-bottom: 100%;
+                    margin-bottom: 20px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 4px white inset;
+                    display: inline-block;
+
+                    &#cyan{
+                        background-color: #1374F0;
+                    }
+
+                    &#blue{
+                        background-color: #31B9EB;
+                    }
+
+                    &#green{
+                        background-color: #82D00C;
+                    }
+
+                    &#yellow{
+                        background-color: #F9E900;
+                    }
+
+                    &#pink{
+                        background-color: #E60062;
+                    }
+                }
+
+                & .color-desc{
+
+                    display: flex;
+                    padding-right: 20%;
+
+                    & > *:not(:last-of-type){
+                        display: flex;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+
+	& h1{
+		color: #E20062;
+	}
+
+    & .logo-bw{
+        background-size: 50% auto !important;
+    }
+
+    & .pen{
+        padding-bottom: 20%;
+    }
+
+    & .top{
+        padding-bottom: 40%;
+    }
+
+	& .rost-dark{
+		background-color: #363636;
+	}
+}

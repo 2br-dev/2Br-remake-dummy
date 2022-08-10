@@ -1,0 +1,116 @@
+.project#edelveis{
+	
+	$bg: #282B33; 
+	$accent: #39A433;
+	background: $bg !important;
+	color: #fff;
+		
+	& h1, & a{
+		color: $accent;
+	}
+	
+	& header{
+		background-color: rgba($bg, .7);
+	}
+	
+	& .logo-wireframe{
+		padding-bottom: 100%;
+		background-size: 65% auto;
+		background-color: #1F2128;
+	}
+	
+	& .notebook{
+		width: 100%;
+	}
+	
+	& .p-block{
+		
+		padding: 5vmax;
+		
+		& .p-block{
+			padding: 0 initial;
+		}
+		
+		@media(max-width: $large){
+			padding: 2vmax;
+		}
+		
+	}
+	
+	& .darker-bg{
+		
+		background: rgba(black, .3);
+		height: 100%;
+		
+		& h2{
+			margin: 0;
+		}
+	}
+	
+	& .moodboard{
+		padding-bottom: 90%;
+	}
+	
+	& .logo-v{
+		
+		& .lazy{        
+			background-size: 65% auto;
+		}
+	}
+	
+	& .logo-h{
+		
+		width: calc(100% - 40px);
+		
+		@media(max-width: $large){
+			width: 100%;
+		}
+		
+		& .lazy{
+			
+			height: 100%;
+			background-size: 65% auto;
+
+			@media(max-width: $large){
+				padding-bottom: 65%;
+			}
+		}
+	}
+	
+	& .magazine{
+		padding-bottom: 27%;
+		background-size: contain;
+		
+		@media(max-width: $large){
+			padding-bottom: 45%;
+			background-size: cover;
+		}
+	}
+	
+	& .examples{
+		
+		& .lazy{
+			width: 95%;
+			padding-bottom: 100%;
+			
+			@media(max-width: $large){
+				width: 100%;
+			}
+		}
+		
+		& .col:last-of-type{
+			
+			& .lazy{                
+				margin-left: auto;
+			}
+		}
+	}
+	
+	& .website{
+		padding: 6vmax 0;
+		background-image: url(/projects/edelveis/14.svg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-color: #1F2128;
+	}
+}

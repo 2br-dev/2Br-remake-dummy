@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Zatochi",
+		"intro": "Ребрендинг кафе азиатской кухни: смена позиционирования, свежий дизайн, дерзкие коммуникации и вкусная еда.",
+		"poster": "/projects/zatochi/poster.jpg",
+		"video": "/projects/zatochi/poster.mp4",
+		"tags": [
+			"#веб-разработка",
+			"#брендинг",
+			"#3D",
+			"#motion-design"
+		],
+		"url": "/zatochi.html"
+	},
+	{
+		"name": "Табрис",
+		"intro": "Активно работаем по поддержке HR бренда для сети супермакретов «Табрис».",
+		"poster": "/projects/tabris/poster.jpg",
+		"video": "/projects/tabris/poster.mp4",
+		"tags": [
+			"#наружная реклама",
+			"#смм"
+		],
+		"url": "/tabris.html"
+	},
+	{
+		"name": "M-Denta",
+		"intro": "Сайт стоматологической клиники с применением высоких технологий веб-разработки",
+		"poster": "/projects/mdenta/poster.jpg",
+		"video": "/projects/mdenta/poster.mp4",
+		"tags": [
+			"#наружная реклама",
+			"#смм"
+		],
+		"url": "/mdenta.html"
+	}
+]

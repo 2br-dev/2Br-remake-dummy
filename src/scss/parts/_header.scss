@@ -9,6 +9,30 @@ header{
 	top: 0;
 	z-index: 50;
 
+	& ul{
+		margin: 0;
+		display: flex;
+		padding: 0 10px !important;
+
+		& li{
+
+			margin: 0 10px;
+
+			&:not(:last-of-type){
+
+				&:after{
+					display: inline-block;
+					padding: 0 10px;
+					content: '•';
+				}
+			}
+
+			& a{
+				color: #fff;
+			}
+		}
+	}
+
 	& .container{
 
 		position: relative;

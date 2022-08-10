@@ -1,0 +1,98 @@
+.project#tabris{
+
+	$accent: #7CA71D;
+
+	& main{
+
+		& .accent-text, & a{
+			color: $accent;
+		}
+
+		& .phone-wrapper{
+
+			position: relative;
+
+			& .phone{
+				width: 100%;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				position: absolute;
+				z-index: 5;
+			}
+		}
+
+		& .scrolling-bg-wrapper{
+
+			height: 26vmax;
+			position: relative;
+			z-index: 1;
+			
+			& .scrolling-bg-container{
+				
+				background-color: $accent;
+				position: absolute;
+				height: calc(100% - 6vw);
+				transform: translate(-50%, -50%) rotate(-3deg);
+				width: calc(100% + 200px);
+				top: 50%;
+				left: 50%;
+
+				& .scrolling-bg, & .scrolling-bg-reverse{
+					height: 33.3333%;
+					background-size: 85% auto;
+					background-repeat: repeat-x;
+					background-color: transparent;
+					transform: translateZ(0);
+				}
+			}
+		}
+
+		& .top-block{
+
+			margin-bottom: 0;
+
+			& .lazy{
+				background-color: transparent;
+			}
+		}
+
+		& .quad-wrapper{
+			
+			margin-top: -8.5vmax;
+			margin-bottom: 0;
+			
+			& .tabris-quad{
+				background-repeat: repeat-y;
+				padding-bottom: calc(400% + 10.5vmax);
+				background-color: transparent;
+				background-size: 99% auto;
+				filter: drop-shadow(0, 4px rgba(black, .4));
+			}
+		}
+
+		& .bottom-block{
+
+			color: #fff;
+			background: linear-gradient(to right, $accent, darken($accent, 20));
+
+			& .bottom-background{
+				height: 100%;
+				background-color: transparent;
+				background-size: contain;
+				position: relative;
+				background-position: bottom center;
+
+				& .bottom-foreground{
+					height: calc(100% + 5vmax);
+					width: 100%;
+					background-color: transparent;
+					position: absolute;
+					bottom: 0;
+					background-size: contain;
+					background-position: center;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<div class="case">
+	<div class="poster-wrapper">
+		<a href="@@url">&nbsp;</a>
+		<div class="lazy poster" data-src="@@poster"></div>
+		<video muted src="@@video" class="responsive-video"></video>
+	</div>
+	<div class="case-wrapper">
+		<h3 class="link"><a href="@@url">@@name</a></h3>
+		<div class="action"><a href="">Обсудить</a></div>
+	</div>
+	<div class="tags">
+		@@for(var i=0; i<tags.length; i++){
+			<span class="tag"><span class="tag-text">`+tags[i]+`</span></span>
+		}
+	</div>
+	<div class="intro">
+		@@intro
+	</div>
+</div>

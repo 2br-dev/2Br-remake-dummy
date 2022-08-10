@@ -10,6 +10,10 @@ body{
 	min-height: 100vh;
 	flex-direction: column;
 
+	& .hidden{
+		display: none !important;
+	}
+
 	& .col{
 		padding-top: 20px !important;
 		padding-bottom: 20px !important;
@@ -40,15 +44,16 @@ body{
 		}
 	}
 
+	& .no-margin{
+		margin: 0 !important;
+	}
+
+	& .no-padding{
+		padding: 0 !important;
+	}
+	
 	@media(min-width: $medium){
 
-		& .no-margin{
-			margin: 0 !important;
-		}
-	
-		& .no-padding{
-			padding: 0 !important;
-		}
 
 		& .pl0{
 			padding-left: 0 !important;
@@ -109,10 +114,11 @@ body{
 		&.fh{
 
 			height: 100%;
+			object-fit: cover;
 
 			&.mh{
 
-				@media(max-width: $medium){
+				@media(max-width: $large){
 					padding-bottom: 65%;
 				}
 			}
@@ -140,15 +146,6 @@ body{
 		}
 	}
 
-	& video{
-
-		&.fh{
-
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-
 	& .col{
 
 		& .row{
@@ -164,5 +161,27 @@ body{
 
 		position: relative;
 		overflow: hidden;
+	}
+
+	& .breadcrumbs{
+
+		display: flex;
+		margin: 2vw 0;
+
+		& .crumb{
+
+			&:not(:last-of-type){
+
+				&:after{
+					content: '›';
+					display: inline-block;
+					padding: 0 8px;
+				}
+			}
+
+			& a{
+				color: #fff;
+			}
+		}
 	}
 }

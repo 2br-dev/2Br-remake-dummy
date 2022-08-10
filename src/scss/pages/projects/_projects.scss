@@ -1,71 +1,196 @@
-@import "zatochi";
-@import "u";
-@import "uforum";
-@import "tabris";
-@import "probeauty";
+@import "./cases/zatochi";
+@import "./cases/u";
+@import "./cases/uforum";
+@import "./cases/tabris";
+@import "./cases/probeauty";
+@import "./cases/loppi";
+@import "./cases/rost";
+@import "./cases/edelveis";
+@import "./cases/victory";
+@import "./cases/mdenta";
 
-.project{
 
-	&.light{
 
-		background: #fff;
-		color: $text;
+body{
 	
-		& header{
+	&.project{
+	
+		&.light{
+	
+			background: #fff;
+			color: $text;
+		
+			& header{
+	
+				background: rgba(#fff, .7);
+		
+				& .container{
+		
+					& a, & span{
+						color: #000;
+					}
+		
+					&:after{
+						background: linear-gradient(to left, transparent, black, transparent);
+					}
+				}
+			}
+	
+			& footer{
+	
+				& .container{
+	
+					&:before{
+						background: linear-gradient(to right, transparent, black, transparent);
+					}
+				}
+	
+		
+				& a{
+					color: rgba($text, .5);
+		
+					&:hover{
+						color: $text;
+					}
+				}
+			}
+		}
+	
+		.title-video{
+			margin-bottom: 4vmax;
+		
+			& video, & img{
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+			}
+		}
+	
+		& h1{
+			font-size: 5vmax;
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+	
+		& h2{
+			font-size: 3.5vmax;
+			font-family: 'Gogh';
+			line-height: 1em;
+		}
+	}
+}
 
-			background: rgba(#fff, .7);
+.cases{
+
+	flex-wrap: wrap;
+	columns: 2;
+	column-gap: 4vw;
 	
-			& .container{
+	& .case{
+		
+		break-inside: avoid;
+		margin-bottom: 4vw;
+
+		& video{
+			width: 100%;
+		}
 	
-				& a, & span{
-					color: #000;
+		& .case-wrapper{
+			
+			display: flex;
+			
+			& .link{
+				font-family: 'Garet';
+				text-transform: uppercase;
+				font-weight: bold;
+				flex-grow: 1;
+				font-size: 32px;
+			}
+
+			& h3{
+				margin: 0;
+			}
+		}
+	
+		& .poster-wrapper{
+			position: relative;
+			margin-bottom: 2em;
+			display: flex;
+
+			& a{
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+			}
+
+			& .poster{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+
+			&:hover{
+
+				& .poster{
+
+					display: none !important;
+				}
+			}
+		}
+	
+		& .tags{
+	
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px 0;
+	
+			& .tag{
+	
+				color: $text;
+				display: inline-block;
+				line-height: 2em;
+				display: inline-flex;
+				margin-bottom: .3em;
+				font-size: 16px;
+				white-space: nowrap;
+				
+				& .tag-text{
+					background-color: #d3d3d3;
+					display: block;
+					padding: 0 5px;
+				}
+	
+				&:before{
+					content: '';
+					width: 8px;
+					background: url(/img/tags/arrow-left.svg) left center no-repeat;
+					background-size: 100%, 100%;
 				}
 	
 				&:after{
-					background: linear-gradient(to left, transparent, black, transparent);
+					content: '';
+					width: 13px;
+					background: url(/img/tags/arrow-right.svg) left center no-repeat;
+					background-size: 100%, 100%;
+				}
+	
+				&:first-of-type:before{
+					background: url(/img/tags/linear-left.svg) left center no-repeat;
+					background-size: 100%, 100%;
+					width: 5px;
+				}
+	
+				&:last-of-type:after{
+					background: url(/img/tags/linear-right.svg) left center no-repeat;
+					background-size: 100%, 100%;
+					width: 5px;
 				}
 			}
 		}
-
-		& footer{
-
-			& .container{
-
-				&:before{
-					background: linear-gradient(to right, transparent, black, transparent);
-				}
-			}
-
-	
-			& a{
-				color: rgba($text, .5);
-	
-				&:hover{
-					color: $text;
-				}
-			}
-		}
-	}
-
-	.title-video{
-		margin-bottom: 4vmax;
-	
-		& video{
-			width: 100%;
-			height: auto;
-			object-fit: cover;
-		}
-	}
-
-	& h1{
-		font-size: 5vmax;
-		text-transform: uppercase;
-		line-height: 1em;
-	}
-
-	& h2{
-		font-size: 3.5vmax;
-		font-family: 'Gogh';
-		line-height: 1em;
 	}
 }

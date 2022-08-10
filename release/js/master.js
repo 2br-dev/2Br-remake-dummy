@@ -13,12 +13,49 @@ $(function () {
   }
 
   animate();
-  $('.lazy, video').lazy({
+  var options = {
     afterLoad: function afterLoad(el) {
       el.addClass('complete');
     }
+  };
+
+  if ($('.scroll-wrapper').length) {
+    options.appendScroll = $('.scroll-wrapper');
+  }
+
+  $('.lazy, video').lazy(options);
+  $(window).enllax();
+  $('body').on('mouseenter', '.poster-wrapper', playVideo);
+  $('body').on('mouseleave', '.poster-wrapper', stopVideo);
+  $('body').on('click', '.poster', playMobile);
+  $(window).on('resize', function () {
+    $(window).off('scroll');
+    $(window).enllax();
+    $(window).scroll();
+    $('.lazy').lazy();
   });
 });
+
+function playVideo() {
+  var video = this.querySelector('video');
+  video.play();
+}
+
+function playMobile() {
+  $('.poster').css({
+    opacity: 1
+  });
+  $(this).css({
+    opacity: 0
+  });
+  $(this).next()[0].play();
+}
+
+function stopVideo() {
+  var video = this.querySelector('video');
+  video.pause();
+  video.currentTime = 0;
+}
 
 function animate() {
   var scrollPos = $('html,body').scrollTop();

@@ -1,0 +1,99 @@
+#mdenta{
+
+	$primary: #35DAE9;
+
+	& main{
+
+		background-color: #040210;
+
+		& .lazy:not([data-src]){
+			background-color: transparent;
+		}
+		
+		& h1, & a{
+
+			color: $primary;
+		}
+
+		& .icons{
+
+			display: flex;
+			min-height: 80px;
+			margin: 6vmax 0;
+
+			& li{
+
+				width: 80px;
+				margin-right: 5%;
+				flex-grow: 1;
+			}
+		}
+
+		& .screen{
+
+			border: 2px solid $primary;
+			padding-bottom: 272%;
+		}
+
+		& #transform{
+			border: 2px solid $primary;
+			margin: 6vmax 0;
+		}
+
+		& .tech{
+
+			display: flex;
+			margin: auto;
+			width: fit-content;
+			align-items: center;
+			
+			& > *{
+				padding: 0 20px;
+			}
+
+			& h2{
+				margin: 0;
+			}
+
+			& .tech-center{
+				width: 400px;
+			}
+
+			@media(max-width: 900px){
+
+				flex-direction: column;
+				max-width: 100%;
+
+				& > *{
+					padding: 0;
+				}
+
+				& h2{
+					margin: .7em;
+				}
+
+				& .tech-center{
+					max-width: 100%;
+				}
+			}
+		}
+
+		& .tech-wrapper{
+
+			position: relative;
+			padding-top: 4vw;
+
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				background-color: #08041F;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 50vmax;
+				z-index: -1;
+			}
+		}
+	}
+}

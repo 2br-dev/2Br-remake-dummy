@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: 'M-Denta'})
+</head>
+<body class="project" id="mdenta">
+	@@include('./parts/header.html')
+	<main>
+		<div class="title-video">
+			<video class="lazy" data-src="/projects/mdenta/video/head.mp4|video/mp4" autoplay muted loop></video>
+		</div>
+		<div class="row">
+			<div class="col l10 m12 offset-l1">
+				<div class="tags">
+					<a href="">#Веб-разработка</a>
+					<a href="">#3D моделирование</a>
+				</div>
+				<h1 class="accent-text">M-Denta</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col l4 m12 s12 order-m1 offset-l1">
+				<h2>Футуризм</h2>
+				<p>Сайт выполнен в футуристичной стилистике с применением сложных веб-технологий, в том числе таких, как WebGL и библиотеки ThreeJS.  Что это означает на практике? А это означает, что на сайте используется полноценный 3D со всеми вытекающими – модели на сайте можно рассмотреть практически с любого ракурса. Вместе с тем, за счёт использования точечной фактуры материала удалось добиться эффекта Sci­Fi HUD (интерфейс компьютера из научной фантастики).</p>
+				<p>Элементы управления сделаны в стиле Sci-Fi HUD и минимализма, однако общая лаконичность интерфейса компенсируется комплексностью 3D моделей, встроенных в сайт и их интерактивностью – модели реагируют на поведение пользователя, трансформируются один в другой</p>
+			</div>
+			<div class="col offset-l1 l5 m8 offset-m2 s12">
+				<video class="lazy responsive-video" id="phone" data-src="/projects/mdenta/video/phone.mp4|video/mp4" autoplay muted loop></video>
+			</div>
+		</div>
+		<div class="row tech-wrapper">
+			<div class="col xl5 offset-xl1 l6 m12 s12">
+				<h2>Технологии</h2>
+				<ul class="icons">
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/html.png"></div>
+					</li>
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/jquery.png"></div>
+					</li>
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/js.png"></div>
+					</li>
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/modx.png"></div>
+					</li>
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/sass.png"></div>
+					</li>
+					<li>
+						<div class="lazy q contain" data-src="/projects/mdenta/img/icons/threejs.png"></div>
+					</li>
+				</ul>
+				<p>
+					Стек технологий и фреймворков, задействованных при создании сайта достаточно широк – как Front-end (клиентская часть), так и Back-end (серверная часть), и включает в себя как традиционные инструменты (jQuery, SCSS, Babel), так и достаточно экзотические (ThreeJS)
+				</p>
+				<video class="lazy responsive-video" id="transform" data-src="/projects/mdenta/video/transforms.mp4|video/mp4" autoplay muted loop></video>
+				<p>Одной из особенностей сайта является наличие 3D-моделей, иллюстрирующих разделы сайта, состоящие из точек, перетекающие одна в другую по мере прохождения пользовательского пути.</p>
+				<p>Реализована данная концепция с помощью технологии WebGL. Сами модели выполнены вручную в программе для 3D­моделирования Blender 3D. Кроме того, с помощью JavaScript модели получилось сделать интерактивными, реагирующими на действия пользователя.</p>
+				<p>Вместе с тем, сложность проекта возрастала, учитывая, что сайт должен корректно отображаться как на стационарных компьютерах, так и на различных мобильных устройствах. Этого удалось добиться за счёт использования модульной сетки, построенной на базе сетки, используемой во фреймворке Materialize CSS, используемом в проекте.</p>
+			</div>
+			<div class="col xl5 l6 m12 s12">
+				<div class="lazy screen" data-src="/projects/mdenta/img/screen.png"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="tech">
+					<div class="tech-left">
+						<h2>Blender</h2>
+					</div>
+					<div class="tech-center">
+						<div class="lazy q contain" data-src="/projects/mdenta/img/threejs.png"></div>
+					</div>
+					<div class="tech-right">
+						<h2>ThreeJS</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s10 offset-s1">
+				<div class="lazy h contain" data-src="/projects/mdenta/img/responsive.png"></div>
+			</div>
+		</div>
+	</main>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>
