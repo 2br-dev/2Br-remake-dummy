@@ -85,6 +85,10 @@ body{
 	flex-wrap: wrap;
 	columns: 2;
 	column-gap: 4vw;
+
+	@media(max-width: 800px){
+		columns: 1;
+	}
 	
 	& .case{
 		
